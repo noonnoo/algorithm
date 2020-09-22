@@ -1,9 +1,9 @@
 # algorithm_solving
-* 이 Repository는\n
+* 이 Repository는\
 백준, 프로그래머스 등 알고리즘 사이트에서 푼 알고리즘 코드들을 올립니다
 
-* 블로그\n
- 네이버 블로그: https://blog.naver.com/kdy246 \n
+* 블로그 \
+ 네이버 블로그: https://blog.naver.com/kdy246 \
  깃 블로그: https://noonnoo.github.io/
 
 
