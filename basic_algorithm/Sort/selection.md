@@ -14,7 +14,7 @@
 
 ### 백준에관련 문제
 
-[수 정렬하기1](https://www.acmicpc.net/problem/2750, "백준 수정렬하기1")
+[수 정렬하기1](https://www.acmicpc.net/problem/2750)
 
 #### c++ 코드
 ```cpp
