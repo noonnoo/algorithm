@@ -14,6 +14,6 @@
 * 백준에서 푼 문제들의 코드를 업로드합니다. 
 * 코드에 관한 설명은 네이버 블로그에 올라와 있습니다.
 
-## basic_algorithm
+## [basic_algorithm](https://github.com/noonnoo/algorithm/blob/master/basic_algorithm/basic_algorithm.md#%EA%B8%B0%EC%B4%88-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98, "기초 알고리즘")
 * 기초적인 알고리즘을 정리하는 공간입니다. 
 * 네이버 블로그에도 같은 내용을 포스팅합니다.
