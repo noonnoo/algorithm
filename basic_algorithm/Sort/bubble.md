@@ -90,7 +90,7 @@ void bubbleSort(vector<int>& nums) {
 ```
 
 #### 개선된 버블정렬 관련 백준 
-[버블정렬](https://www.acmicpc.net/problem/1838, "버블정렬")
+[1838: 버블정렬](https://www.acmicpc.net/problem/1838)
 
 이 문제는 개선된 버블 정렬이 어느 시점에서 끝내고 break되는 지를 출력하는 문제이다.
 진짜로 버블 정렬을 사용하면 N의 개수가 50만개이 때문에 시간초과가 난다. 
