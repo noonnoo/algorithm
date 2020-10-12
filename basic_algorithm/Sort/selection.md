@@ -5,7 +5,7 @@
 ### 원리
 (오름차순 기준) 배열에 담긴 숫자를 처음부터 훑어나간다. 현재 숫자의 인덱스를 i라고 하면 i보다 큰 인덱스에 있는 숫자 중 가장 작은 수와 swap 한다.
 가장 작은 수부터 앞으로 빼고 보는 간단한 논리의 정렬이다.  
-![image](https://user-images.githubusercontent.com/33820372/95770678-bd27fc80-0cf4-11eb-93aa-a0925be172da.png)  
+![image](https://user-images.githubusercontent.com/33820372/95770751-d6c94400-0cf4-11eb-8dac-9fb6beaf8471.png)
 
 ### 시간복잡도
 첫번째 for loop가 n번 순회하고, 두번째 for루프는 n-i번 순회한다. 이 부분 배열의 크기는 n부터 1까지 감소하게 된다. n번동안 부분배열을 돌면서 비교하는 총 횟수는 n+(n-1)+(n-2)+...+2+1 이고 이는 n(n+1)/2가 된다.
