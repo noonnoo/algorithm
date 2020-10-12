@@ -20,7 +20,8 @@ n = k^2이라고 가정하자. 위 수식에서 cn은 병합하는데 걸리는 
 
 ### 백준 관련 문제
 
-[수 정렬하기1](https://www.acmicpc.net/problem/2750)
+[수 정렬하기1](https://www.acmicpc.net/problem/2750)  
+[수 정렬하기2](https://www.acmicpc.net/problem/2751)  
 
 #### c++ 코드
 ```cpp
