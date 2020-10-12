@@ -24,11 +24,11 @@
 #include <vector>
 using namespace std;
 
-void bubbleSort(vector<int> &nums) {
-	for (int i = 0; i < nums.size() - 1; i++) {
-		for (int j = i + 1; j < nums.size(); j++) {
-			if (nums[i] > nums[j])        //i번째 수보다 작은 수를 앞으로 뺌
-				swap(nums[i], nums[j]);
+void bubbleSort(vector<int>& nums) {
+	for (int i = nums.size() - 1; i > 0; i--) {
+		for (int j = 0; j < i; j++) {
+			if (nums[j] > nums[j + 1])        //j번째 수보다 작은 수면 교환
+				swap(nums[j], nums[j + 1]);
 		}
 	}
 }
@@ -38,7 +38,7 @@ int main() {
 	cin >> N;
 	vector<int> nums(N, 0);
 
-	for(int i = 0; i < N; i++) {
+	for (int i = 0; i < N; i++) {
 		cin >> nums[i];
 	}
 
@@ -46,27 +46,25 @@ int main() {
 
 	for (int i = 0; i < N; i++) {
 		cout << nums[i] << "\n";
-	}	
+	}
 }
 ```
 
 #### python 코드
 ```python
-#python 코드
 def bubbleSort(nums):
-    for i in range(len(nums) - 1):
-        for j in range(i, len(nums)):
-            if nums[i] < nums[j]:          #내림차순 정렬
-                nums[i], nums[j] = nums[j], nums[i]
+    for i in range(len(nums) - 1, 0, -1):
+        for j in range(0, i):
+            if nums[j] > nums[j + 1]:
+                nums[j], nums[j + 1] = nums[j + 1], nums[j]
 
 N = int(input())
 nums = [int(input()) for n in range(N)]
 
 bubbleSort(nums)
 
-while(N):                                  #거꾸로 출력
-    N -= 1
-    print(nums[N])
+for i in range(N):
+    print(nums[i])
 ```
 
 -----
@@ -76,12 +74,12 @@ while(N):                                  #거꾸로 출력
 이를 개선하기 위한 장치가 있다. 두번째 for문을 돌면서 수들간의 swap이 한차례도 없다면 이미 정렬이 완료된 상태로 생각하고 수행을 끝낸다. 
 ```cpp
 void bubbleSort(vector<int>& nums) {
-	for (int i = 0; i < nums.size(); i++) {
+	for (int i = nums.size() - 1; i > 0; i--) {
 		bool sorted = true;
-		for (int j = i + 1; j < nums.size(); j++) {
-			if (nums[i] > nums[j]) {        //i번째 수보다 작은 수를 앞으로 뺌
-				swap(nums[i], nums[j]);
-				sorted = false;
+		for (int j = 0; j < i; j++) {
+			if (nums[j] > nums[j + 1]) {       
+				swap(nums[j], nums[j + 1]);
+				sorted = false;        //한번이라도 swap할 일이 생겼다면 정렬 완료 상태 X
 			}
 		}
 		if (sorted) break;
