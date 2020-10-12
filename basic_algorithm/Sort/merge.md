@@ -78,4 +78,52 @@ int main() {
 		cout << nums[i] << "\n";
 	}
 }
+```  
+
+### python 코드
+```py
+#python 코드
+import sys
+import math
+sys.setrecursionlimit(2000)
+
+N = int(input())
+nums = [int(input()) for n in range(N)]
+tmp = list(nums)
+
+def merge(s, m, e):
+    i = s
+    j = m + 1
+    t = s
+    while (i <= m and j <= e):
+        if (nums[i] <= nums[j]):
+            tmp[t] = nums[i]
+            i += 1
+        else:
+            tmp[t] = nums[j]
+            j += 1
+        t += 1
+    while (i <= m):
+        tmp[t] = nums[i]
+        i += 1
+        t += 1
+    while (j <= e):
+        tmp[t] = nums[j]
+        j += 1
+        t += 1
+    for k in range(s, e+1):
+        nums[k] = tmp[k]
+
+def mergeSort(s, e):
+    if(s >= e):
+        return
+    m = math.floor((s+e)/2)
+    mergeSort(s,m);
+    mergeSort(m+1, e)
+    merge(s,m,e)
+
+mergeSort(0, N-1)
+
+for i in range(N):
+    print(nums[i])
 ```
