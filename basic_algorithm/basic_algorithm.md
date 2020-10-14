@@ -7,3 +7,4 @@
 * [버블 정렬(bubble sort)](https://github.com/noonnoo/algorithm/blob/master/basic_algorithm/Sort/bubble.md#%EB%B2%84%EB%B8%94-%EC%A0%95%EB%A0%AC,"버블정렬")
 * [삽입 정렬(bubble sort)](https://github.com/noonnoo/algorithm/blob/master/basic_algorithm/Sort/insertion.md#%EC%82%BD%EC%9E%85%EC%A0%95%EB%A0%AC,"삽입정렬")
 * [병합 정렬(bubble sort)](https://github.com/noonnoo/algorithm/blob/master/basic_algorithm/Sort/merge.md#%EB%B2%84%EB%B8%94-%EC%A0%95%EB%A0%AC,"병합정렬")
+* [퀵 정렬(bubble sort)](https://github.com/noonnoo/algorithm/blob/master/basic_algorithm/Sort/quick.md#%ED%80%B5-%EC%A0%95%EB%A0%AC,"퀵정렬")
