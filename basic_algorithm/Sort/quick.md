@@ -71,7 +71,8 @@ int main() {
 ```  
 
 ### python 코드
-```pyimport sys
+```py
+import sys
 import math
 sys.setrecursionlimit(2000)
 
