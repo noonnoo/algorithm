@@ -74,3 +74,19 @@ int main() {
 	}
 }
 ```  
+
+#### 음수까지 정렬할 수 있는 python 코드
+```py
+#python 코드
+N = int(input())
+nums = [int(input()) for n in range(N)]
+counting = [0 for n in range(2001)]
+
+for num in nums:
+    counting[num + 1000] += 1
+
+for idx in range(2001):
+    while(counting[idx]):
+        print(idx - 1000)
+        counting[idx] -= 1
+```
