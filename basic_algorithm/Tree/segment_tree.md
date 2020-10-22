@@ -73,5 +73,5 @@ void update(vector<long long>& tree, int node, int start, int end, int index, lo
 
 
 ### 세그먼트 트리 활용 기본 문제
-[백준 구간합 구하기](https://www.acmicpc.net/problem/2042) 문제.  
-[블로그](]https://blog.naver.com/kdy246/222123828378)에 코드와 간략한 생각을 정리했다.
+[백준 구간합 구하기](https://www.acmicpc.net/problem/2042) 문제.   
+[블로그](https://blog.naver.com/kdy246/222123828378)에 코드와 간략한 생각을 정리했다.
