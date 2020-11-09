@@ -5,7 +5,7 @@ int num[2000];
 bool DP[2001][2001];
 int N, M, n1, n2;
 
-void get_pelidrome() {
+void get_palindrome() {
 	for (int i = 0; i < N; i++) {
 		for (int j = 0; j < i + 2; j++) {
 			if (i <= j)                    // i == j이거나 i == j+1이면 무조건 1
@@ -24,7 +24,7 @@ int main() {
 	for (int i = 0; i < N; i++)
 		cin >> num[i];
 
-	get_pelidrome();
+	get_palindrome();
 	cin >> M;
 	for (int i = 0; i < M; i++) {
 		cin >> n1 >> n2;
