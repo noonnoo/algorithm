@@ -6,7 +6,7 @@ string str;
 bool DP[2501][2501];
 int cnt[2501];
 
-void get_pelidrome(int &size) {
+void get_palindrome(int &size) {
 	for (int i = 0; i < size; i++) {
 		for (int j = 0; j < i + 2; j++) {
 			if (i <= j)
@@ -24,7 +24,7 @@ int main() {
 	cin >> str;
 	int size = str.size();
 
-	get_pelidrome(size);
+	get_palindrome(size);
 
 	cnt[0] = 1;
  	for (int i = 1; i < size; i++) {
