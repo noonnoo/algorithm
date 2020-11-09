@@ -3,18 +3,18 @@
 using namespace std;
 
 string str;
-bool DP[2501][2501];
+bool is_palindrome[2501][2501];
 int cnt[2501];
 
 void get_palindrome(int &size) {
 	for (int i = 0; i < size; i++) {
 		for (int j = 0; j < i + 2; j++) {
 			if (i <= j)
-				DP[i][j] = 1;
-			else if (DP[i - 1][j + 1] == true && str[i] == str[j])
-				DP[i][j] = 1;
+				is_palindrome[i][j] = 1;
+			else if (is_palindrome[i - 1][j + 1] == true && str[i] == str[j])
+				is_palindrome[i][j] = 1;
 			else
-				DP[i][j] = 0;
+				is_palindrome[i][j] = 0;
 		}
 	}
 }
@@ -26,11 +26,11 @@ int main() {
 
 	get_palindrome(size);
 
-	cnt[0] = 1;
+	cnt[0] = 1;		//첫번째 부분은 자기자신이기 때문에 무조건 팰린드롬
  	for (int i = 1; i < size; i++) {
 		cnt[i] = 1e9;
 		for (int j = 0; j < i + 1; j++) {
-			if (DP[i][j]) {
+			if (is_palindrome[i][j]) {
 				if (j == 0 && cnt[i] > 1)
 					cnt[i] = 1;
 				else if (cnt[i] > cnt[j - 1] + 1)
