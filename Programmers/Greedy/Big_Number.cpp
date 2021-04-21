@@ -3,28 +3,22 @@
 
 using namespace std;
 
-int ans = 0;
-
-void combination(string number, string comb, int N, int M, int idx) {
-	if (comb.size() == M) {
-		ans = max(stoi(comb), ans);
-		return;
-	}
-	else if (idx == N) {
-		return;
-	}
-	else {
-		combination(number, comb, N, M, idx + 1);
-		comb += number[idx];
-		combination(number, comb, N, M, idx + 1);
-	}
-}
-
 string solution(string number, int k) {
-	string answer = "";
+    string answer = "";
 
-	combination(number, "", number.size(), number.size() - k, 0);
+    int idx = -1;
+    int nsize = number.size();
+    for (int i = nsize - k; i > 0; i--) {
+        int check_list = nsize - i;
+        int tmp_max = -1;
+        for (int j = idx + 1; j <= check_list; j++) {
+            if (tmp_max < number[j] - '0') {
+                tmp_max = number[j] - '0';
+                idx = j;
+            }
+        }
+        answer += tmp_max + '0';
+    }
 
-	answer = to_string(ans);
-	return answer;
+    return answer;
 }
