@@ -27,3 +27,7 @@
 ## [basic_algorithm](https://github.com/noonnoo/algorithm/blob/master/basic_algorithm/basic_algorithm.md#%EA%B8%B0%EC%B4%88-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98, "기초 알고리즘")
 * 기초적인 알고리즘을 정리하는 공간입니다. 
 * 네이버 블로그에도 같은 내용을 포스팅합니다.
+
+## [CS 기초 정리](https://github.com/noonnoo/code_interview/blob/master/CS/README.md)
+* CS 기본 과목에 대해 정리하고 공부하는 공간입니다.
+* 블로그/책/유튜브 등을 참고해서 정리합니다.
