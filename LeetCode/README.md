@@ -44,8 +44,8 @@ Dynamic Programming
 
 Graph
 
-- [ ] Clone Graph - https://leetcode.com/problems/clone-graph/
-- [ ] Course Schedule - https://leetcode.com/problems/course-schedule/
+- [X] Clone Graph - https://leetcode.com/problems/clone-graph/
+- [X] Course Schedule - https://leetcode.com/problems/course-schedule/
 - [ ] Pacific Atlantic Water Flow - https://leetcode.com/problems/pacific-atlantic-water-flow/
 - [ ] Number of Islands - https://leetcode.com/problems/number-of-islands/
 - [ ] Longest Consecutive Sequence - https://leetcode.com/problems/longest-consecutive-sequence/
@@ -57,7 +57,7 @@ Graph
 
 Interval
 
-- [ ] Insert Interval - https://leetcode.com/problems/insert-interval/
+- [X] Insert Interval - https://leetcode.com/problems/insert-interval/
 - [ ] Merge Intervals - https://leetcode.com/problems/merge-intervals/
 - [ ] Non-overlapping Intervals - https://leetcode.com/problems/non-overlapping-intervals/
 - [ ] Meeting Rooms (Leetcode Premium) - https://leetcode.com/problems/meeting-rooms/
@@ -87,7 +87,7 @@ Matrix
 
 String
 
-- [ ] Longest Substring Without Repeating Characters - https://leetcode.com/problems/longest-substring-without-repeating-characters/
+- [X] Longest Substring Without Repeating Characters - https://leetcode.com/problems/longest-substring-without-repeating-characters/
 - [ ] Longest Repeating Character Replacement - https://leetcode.com/problems/longest-repeating-character-replacement/
 - [ ] Minimum Window Substring - https://leetcode.com/problems/minimum-window-substring/
 - [ ] Valid Anagram - https://leetcode.com/problems/valid-anagram/
@@ -102,8 +102,8 @@ String
 
 Tree
 
-- [ ] Maximum Depth of Binary Tree - https://leetcode.com/problems/maximum-depth-of-binary-tree/
-- [ ] Same Tree - https://leetcode.com/problems/same-tree/
+- [X] Maximum Depth of Binary Tree - https://leetcode.com/problems/maximum-depth-of-binary-tree/
+- [X] Same Tree - https://leetcode.com/problems/same-tree/
 - [ ] Invert/Flip Binary Tree - https://leetcode.com/problems/invert-binary-tree/
 - [ ] Binary Tree Maximum Path Sum - https://leetcode.com/problems/binary-tree-maximum-path-sum/
 - [ ] Binary Tree Level Order Traversal - https://leetcode.com/problems/binary-tree-level-order-traversal/
