@@ -16,3 +16,13 @@
   - Memory Heap: 메모리 할당이 일어나는 곳 (동적 메모리 할당)
   - Call Stack: 호출 스택이 쌓이는 곳
 
+### V8
+- 구글이 주도하여 만든 오픈 소스 자바스크립트 엔진.
+- ECMAScript와 웹 셈블리어를 실행함.
+- 자바스크립트를 바이트코드로 JIT(Just In Time)컴파일하고 실행.
+  1. Parser가 JS code를 AST로 변환
+     (Abstract Syntax Tree: 자바 스크립트 코드의 구조를 트리 형식으로 나타냄)
+  2. Interpreter가 Syntax Tree로부터 **바이트코드를 생성** → 기계어의 추상화 버전
+  3. 터보 팬(optimizing compiler)가 바이트 코드를 최적화된 기계어로 변환
+  ![V8 컴파일 파이프라인](https://miro.medium.com/max/700/1*ZIH_wjqDfZn6NRKsDi9mvA.png)
+  
