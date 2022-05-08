@@ -9,8 +9,12 @@ queue = deque()
 
 for row in range(n):
     island.append(read())
+    flag = False
+    if flag:
+        continue
     for col in range(m):
         if island[row][col] == '2':
+            flag = True
             queue.append([row, col])
             visit[row][col] = 1
             break
